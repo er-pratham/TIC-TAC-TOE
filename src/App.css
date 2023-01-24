@@ -1,38 +1,205 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  caret-color: transparent;
+  /* overflow: hidden; */
+  background-color: palegreen;
+}
+body
+{
+  height: 100vh;
+  width: 100vw;
+}
+.Header
+{
+  border-bottom: 2px solid gray;
+  text-align: center;
+  color: white;
+  font-family: 'Dosis', cursive;
+  font-size: 1.5rem;
+  height: 10%;
+  background-color: palegreen;
+}
+.Header h1{
+  cursor: pointer;
+}
+.Header h1:hover{
+  color: #485b6e;
+}
+.Board
+{
+  /* border: 2px solid red; */
+  height: 80vh;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Box
+{
+  border: 2px solid white;
+  width: 10vw;
+  height: 15vh;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  
+}
+.Box h2{
+  background-color: aliceblue;
+}
+.Box:hover
+{
+  background-color: gray;
+}
+.Box h2:hover
+{
+  background-color: gray;
+}
+.row1,.row2,.row3
+{
+  display: flex;
+
+}
+.gameinfo{
+  /* height: 10vh; */
+  background: lightblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px ;
+}
+.gameinfo h4
+{
+  font-size: 1.5rem;
+  color: darkmagenta;
+  background-color: lightblue;
+}
+.gameinfo button
+{
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: aqua;
+}
+.gameinfo button:hover
+{
+  color: aqua;
+  background-color: black;
+}
+.footer
+{
+  /* background-color: palegreen; */
+  padding-top: 5px;
+  /* padding-bottom: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.messagebox
+{
+  border:2px solid red;
+  height: max-content;
+  width: 30vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.messagebox h1 ,.messagebox p
+{
+  text-align: center;
   color: white;
+  padding: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.buttonmsg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buttonmsg button
+{
+  color: royalblue;
+  font-size: 1rem;
+  padding: 5px;
+  background-color: bisque;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.buttonmsg button:hover{
+  background-color: royalblue;
+  color: bisque;
+}
+@media only screen and (max-width: 480px) {
+  .Box{
+    width: 20vw;
+    height: 10vh;
   }
-  to {
-    transform: rotate(360deg);
+  .Board{
+    height: 70vh;
+  }
+  .messagebox
+  {
+    width: 50vw;
+  }
+  .messagebox h1 ,.messagebox p{
+    padding: 5px;
+  }
+  .buttonmsg button{
+    padding: 2px;
+  }
+  .footer
+  {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Box{
+    width: 25vw;
+    height: 20vh;
+  }
+  .Board{
+    height: 70vh;
+  }
+  .messagebox
+  {
+    width: 50vw;
+  }
+  .messagebox h1 ,.messagebox p{
+    padding: 5px;
+  }
+  .buttonmsg button{
+    padding: 2px;
+  }
+  .footer
+  {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .Box{
+    width: 20vw;
+    height: 20vh;
+  }
+  .Board{
+    height: 75vh;
+  }
+  .messagebox
+  {
+    width: 50vw;
+  }
+  .messagebox h1 ,.messagebox p{
+    padding: 5px;
+  }
+  .buttonmsg button{
+    padding: 2px;
+  }
+  .footer
+  {
+    font-size: 0.8rem;
   }
 }
